@@ -3,7 +3,6 @@ package com.lesmtech.transformers;
 import android.content.Context;
 import android.graphics.Color;
 import android.util.AttributeSet;
-import android.view.View;
 import android.view.animation.Animation;
 import android.widget.Button;
 
@@ -40,4 +39,5 @@ public class Mybutton extends Button {
     public void setAnimation(Animation animation) {
         super.setAnimation(animation);
     }
+
 }
