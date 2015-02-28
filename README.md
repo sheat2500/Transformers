@@ -21,7 +21,7 @@ Simple Example
 
 XML Usage
 -----
-If you decide to use SlidingMenu as a view, you can define it in your xml layouts like this:
+If you decide to use OptimusPrime as a view, you can define it in your xml layouts like this:
 ```xml
   <com.lesmtech.transformers.OptimusPrime
         android:id="@+id/optimusPrime"
