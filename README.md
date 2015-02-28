@@ -17,6 +17,7 @@ Simple Example
         OptimusPrime optimusPrime = (OptimusPrime) findViewById(R.id.optimusPrime);
         optimusPrime.setFragments(new Fragment[]{new MyFragment(), new MyFragment(), new MyFragment()});
     }
+```
 
 XML Usage
 -----
@@ -27,7 +28,7 @@ If you decide to use SlidingMenu as a view, you can define it in your xml layout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         transformer:type="rotationY"/>
-
+```
 ## ActionBar - RodimusPrime
 
 
