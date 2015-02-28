@@ -2,7 +2,7 @@
 ## ViewPager - OptimusPrime 
 
 Animation Type: 
-1. 0: RotationY
+* RotationY
 
 ## ActionBar - RodimusPrime
 
