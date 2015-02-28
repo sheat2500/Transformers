@@ -3,4 +3,15 @@
 
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+    <string-array name="test_items">
+        <item> one </item>
+        <item> one </item>
+        <item> one </item>
+        <item> one </item>
+        <item> one </item>
+        <item> one </item>
+        <item> one </item>
+        <item> one </item>
+        <item> one </item>
+    </string-array>
 </resources>
