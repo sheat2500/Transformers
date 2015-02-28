@@ -18,8 +18,10 @@ public class MainActivity extends FragmentActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
         OptimusPrime optimusPrime = (OptimusPrime) findViewById(R.id.optimusPrime);
         optimusPrime.setFragments(new Fragment[]{new DefaultFragment(), new DefaultFragment(), new DefaultFragment()});
+
     }
 
 
