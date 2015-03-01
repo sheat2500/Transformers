@@ -10,7 +10,9 @@ import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.util.AttributeSet;
 
+import com.lesmtech.transformers.Animation.Depth;
 import com.lesmtech.transformers.Animation.RotationY;
+import com.lesmtech.transformers.Animation.ZoomOut;
 import com.lesmtech.transformers.library.R;
 
 /**
@@ -18,13 +20,11 @@ import com.lesmtech.transformers.library.R;
  */
 public class OptimusPrime extends ViewPager {
 
-    public final static int RotationYTransformer = 0;
+    public final static int ROTATION_Y_PAGETRANSFORMER = 0;
 
+    public final static int ZOOMOUT_PAGETRANSFORMER= 1;
 
-
-
-
-
+    public final static int DEPTH_PAGETRANSFORMER = 2;
 
     private PagerAdapter mPageAdapter;
     private Context context;
@@ -38,11 +38,9 @@ public class OptimusPrime extends ViewPager {
         super(context, attrs);
         this.context = context;
         TypedArray ta = context.obtainStyledAttributes(attrs, R.styleable.Transformer);
-        int transformerType = ta.getInt(R.styleable.Transformer_type, RotationYTransformer);
+        int transformerType = ta.getInt(R.styleable.Transformer_type, ROTATION_Y_PAGETRANSFORMER);
         setTransformerType(transformerType);
-
         // Default Initial Setting, users can set Fragments by themSelves
-
     }
 
     // Set PageAdapter for PageView
@@ -54,10 +52,15 @@ public class OptimusPrime extends ViewPager {
     // Set Page Transformer Type
     public void setTransformerType(int type){
         switch (type){
-            case RotationYTransformer:
+            case ROTATION_Y_PAGETRANSFORMER:
                 setPageTransformer(true, new RotationY());
-
-
+                break;
+            case ZOOMOUT_PAGETRANSFORMER:
+                setPageTransformer(true, new ZoomOut());
+                break;
+            case DEPTH_PAGETRANSFORMER:
+                setPageTransformer(true, new Depth());
+                break;
             default:
                 setPageTransformer(true, new RotationY());
         }

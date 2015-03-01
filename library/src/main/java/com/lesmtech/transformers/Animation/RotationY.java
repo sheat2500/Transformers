@@ -5,8 +5,8 @@ import android.view.View;
 
 /**
  * Created by Te on 2/27/15.
- * <p/>
- * ViewPager
+ *
+ * ViewPager Animation
  */
 
 public class RotationY implements ViewPager.PageTransformer {
