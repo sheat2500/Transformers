@@ -4,6 +4,8 @@
 
 Animation Type: 
 * RotationY
+* ZoomOut
+* Depth
 
 Simple Example
 -----
